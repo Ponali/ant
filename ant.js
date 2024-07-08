@@ -9,9 +9,12 @@ function pad(a,l){
     while(a<0) a+=l;
     return a;
 }
-function createMap(width,height){
-    //map=[...Array(height)].map(a=>[...Array(width)].map(a=>Math.random()<0.9));
-    map=[...Array(height)].map(a=>[...Array(width)].map(a=>true));
+function createMap(width,height,random){
+    if(random){
+        map=[...Array(height)].map(a=>[...Array(width)].map(a=>Math.random()<0.5));
+    } else {
+        map=[...Array(height)].map(a=>[...Array(width)].map(a=>true));
+    }
     antX=Math.round(width/2);
     antY=Math.round(height/2);
     antRot=0;
