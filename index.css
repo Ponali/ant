@@ -1,0 +1,34 @@
+html,body{
+    float:left;
+    margin:0;
+    padding:0;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+div#map-row{
+    margin:0;
+    display:flex;
+}
+div#map-col{
+    width:8px;
+    height:8px;
+    display: inline-block;
+}
+div#map-col.white{
+    background-color:#ddd;
+}
+div#map-col.black{
+    background-color:#222;
+}
+div#ui{
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: #0007;
+    color: white;
+    padding: 0.7vh 1vw;
+}
+label{
+    font-family: sans-serif;
+}
